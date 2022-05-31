@@ -1,0 +1,16 @@
+body {
+  @extend %font-lato-regular;
+  color: $main-color;
+  font-size: $font-size_base;
+}
+
+a{
+  text-decoration: none;
+  color: $main-color;
+}
+
+.btn-unstyled {
+  border: none;
+  outline: none;
+  background-color: initial;
+}

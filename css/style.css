@@ -1,0 +1,32 @@
+body {
+  font-family: Lato, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  color: #17181A;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #17181A;
+}
+
+.btn-unstyled {
+  border: none;
+  outline: none;
+  background-color: initial;
+}
+
+header__top {
+  padding: 5px 0;
+}
+header a {
+  font-size: 13px;
+}
+header a span {
+  padding-left: 17px;
+}
+
+/*# sourceMappingURL=style.css.map */
