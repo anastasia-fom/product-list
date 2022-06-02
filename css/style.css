@@ -3,7 +3,7 @@ body {
   font-weight: normal;
 }
 
-h1 {
+.products__item-title, h1 {
   font-family: Lato, sans-serif;
   font-weight: bold;
 }
@@ -100,6 +100,66 @@ h1 {
 .breadcrumb-item + .breadcrumb-item::before {
   content: url("../assets/line.svg");
   margin-top: -3%;
+}
+
+.products__item {
+  position: relative;
+  padding-bottom: 34px;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  max-width: 282px;
+}
+.products__item-tags {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 1;
+}
+.products__item-tags a:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.products__item:hover {
+  transition: 0.3s;
+  transform: scale(1.01);
+  color: #73962C;
+  cursor: pointer;
+}
+.products__item-img {
+  overflow: hidden;
+  position: relative;
+  min-height: 285px;
+}
+.products__item-carousel {
+  position: absolute;
+  left: 0;
+  transition: left 0.3s;
+}
+.products__item:hover .products__item-carousel {
+  left: -285px;
+}
+.products__item-info {
+  font-size: 17px;
+  line-height: 22px;
+  padding-top: 24px;
+}
+.products__bootom {
+  border: none;
+}
+.products__bootom p {
+  color: #515151;
+  font-size: 17px;
+}
+.products__bootom .disabled {
+  background-color: #E5E5E5;
+}
+.products__bootom .active {
+  background-color: #99C63C;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
