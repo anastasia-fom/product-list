@@ -3,9 +3,16 @@ body {
   font-weight: normal;
 }
 
+.header__bottom .dropdown-toggle::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
 body {
   color: #17181A;
   font-size: 15px;
+  background-color: #F4F4F4;
 }
 
 a {
@@ -19,14 +26,52 @@ a {
   background-color: initial;
 }
 
-header__top {
+.bg-light {
+  background-color: white !important;
+}
+
+.header__top {
   padding: 5px 0;
 }
-header a {
+.header a {
   font-size: 13px;
 }
-header a span {
+.header a span {
   padding-left: 17px;
+}
+.header__bottom {
+  min-height: 98px;
+  box-shadow: 0 6px 12px rgba(72, 79, 78, 0.17);
+}
+.header__bottom .navbar-brand img {
+  max-width: 262px;
+}
+.header__bottom .nav-search {
+  padding: 0 69px 0 50px;
+}
+.header__bottom .nav-search i {
+  color: #17181A;
+}
+.header__bottom .nav-item:not(.nav-search) a {
+  color: #17181A;
+}
+.header__bottom .nav-item:not(.nav-search):not(:last-child) {
+  padding-right: 30px;
+}
+.header__bottom .dropdown-toggle::after {
+  background-image: url("../assets/arrow.svg");
+  width: 8.5px;
+  height: 4.5px;
+  border: none;
+}
+.header__bottom-right a {
+  font-size: 25px;
+}
+.header__bottom-right a:not(:last-child) {
+  padding-right: 17px;
+}
+.header__bottom-right a i.bi-cart3 {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

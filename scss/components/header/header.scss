@@ -1,4 +1,4 @@
-header{
+.header{
   &__top{
     padding: 5px 0;
   }
@@ -10,4 +10,56 @@ header{
     }
   }
 
+  &__bottom{
+    min-height: 98px;
+    box-shadow: 0 6px 12px rgba(72, 79, 78, 17%);
+
+    .navbar-brand {
+      img {
+        max-width: 262px;
+      }
+    }
+
+    .nav-search {
+      padding: 0 69px 0 50px;
+
+      i {
+        color: $main-color;
+      }
+    }
+
+    .nav-item:not(.nav-search) {
+      a {
+        color: $main-color;
+      }
+
+      &:not(:last-child) {
+        padding-right: 30px;
+      }
+    }
+
+    .dropdown-toggle::after{
+      background-image: url("../assets/arrow.svg");
+      @extend %background-image-bg;
+      width: 8.5px;
+      height: 4.5px;
+      border: none;
+}
+
+
+&-right {
+  a {
+    font-size: 25px;
+
+    &:not(:last-child) {
+      padding-right: 17px;
+    }
+
+    i.bi-cart3 {
+      font-size: 20px;
+    }
+  }
+}
+
+}
 }

@@ -1,7 +1,12 @@
+:root{
+  $bs-green:  #99C63C;
+}
+
 body {
   @extend %font-lato-regular;
   color: $main-color;
   font-size: $font-size_base;
+  background-color: $background-color;
 }
 
 a{
@@ -13,4 +18,8 @@ a{
   border: none;
   outline: none;
   background-color: initial;
+}
+
+.bg-light{
+  background-color: $light-color!important;
 }
