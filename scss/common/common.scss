@@ -23,3 +23,9 @@ a{
 .bg-light{
   background-color: $light-color!important;
 }
+
+h1{
+  @extend %font-lato-bold;
+  font-size: $font-size_lg;
+  line-height: 30px;
+}

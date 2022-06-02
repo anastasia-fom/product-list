@@ -1,0 +1,25 @@
+.breadcrumb {
+  padding: 11px 0;
+
+  li {
+    color: $link-color;
+    font-size: $font-size_sm;
+
+    a {
+      &:hover{
+        color: $bright-color;
+      }
+    }
+  }
+  
+  .active {
+    a {
+        color: $bright-color;
+    }
+  }
+
+  &-item+&-item::before{
+    content: url("../assets/line.svg");
+    margin-top: -3%;
+  }
+}

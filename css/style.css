@@ -3,6 +3,11 @@ body {
   font-weight: normal;
 }
 
+h1 {
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+}
+
 .header__bottom .dropdown-toggle::after {
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,6 +33,11 @@ a {
 
 .bg-light {
   background-color: white !important;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 30px;
 }
 
 .header__top {
@@ -72,6 +82,24 @@ a {
 }
 .header__bottom-right a i.bi-cart3 {
   font-size: 20px;
+}
+
+.breadcrumb {
+  padding: 11px 0;
+}
+.breadcrumb li {
+  color: #43464C;
+  font-size: 13px;
+}
+.breadcrumb li a:hover {
+  color: #73962C;
+}
+.breadcrumb .active a {
+  color: #73962C;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: url("../assets/line.svg");
+  margin-top: -3%;
 }
 
 /*# sourceMappingURL=style.css.map */
