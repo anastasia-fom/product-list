@@ -3,7 +3,7 @@ body {
   font-weight: normal;
 }
 
-.products__item-title, h1 {
+.sidebar .btn, .products__item-title, h1 {
   font-family: Lato, sans-serif;
   font-weight: bold;
 }
@@ -160,6 +160,36 @@ h1 {
 .products__bootom .active {
   background-color: #99C63C;
   border: none;
+}
+
+.sidebar .btn {
+  border: none;
+  color: #2268B4;
+  font-size: 17px;
+  padding: 0;
+  margin-bottom: 12px;
+}
+.sidebar .btn:hover {
+  border: none;
+}
+.sidebar .btn::after {
+  content: url("../assets/icn_arrow_up.svg");
+  width: 9px;
+  height: 9px;
+}
+.sidebar__item li {
+  margin-bottom: 12px;
+}
+.sidebar__check .form-check-input {
+  width: 22px;
+  height: 22px;
+}
+.sidebar__check-title {
+  margin-left: 12px;
+}
+.sidebar__check .context {
+  color: #BDBDBE;
+  margin-left: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

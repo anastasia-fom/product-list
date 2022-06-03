@@ -116,6 +116,7 @@
 </header>
 
 <main>
+
     <section class="page-title">
         <div class="breadcrumbs">
             <div class="container">
@@ -136,7 +137,7 @@
         </div>
     </section>
 
-    <section class="view">
+    <!--<section class="view">
         <div class="container">
             <div class="row">
                 <div class="col-2 pe-0">
@@ -144,7 +145,7 @@
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenu2"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
+                                Display Wall
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li>
@@ -172,52 +173,437 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <section class="products">
         <div class="container">
             <div class="row">
-                <div class="col-2 col-md-12 pe-0">
-                    <ul class="list-group">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
-                    </ul>
+                <div class="col-2 pe-0 products-sidebar">
+
+                    <div class="sidebar">
+                        <div class="flex-shrink-0 p-3 bg-white">
+                            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+                                <span class="fs-5 fw-semibold">Collapsible</span>
+                            </a>
+                            <ul class="list-unstyled ps-0">
+                                <li class="mb-2">
+                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true">
+                                        Subcategory
+                                    </button>
+                                    <div class="collapse show" id="collapse1">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem1" checked>
+                                                    <label class="form-check-label" for="FirstCheckItem1">
+                                                        <span class="sidebar__check-title">Xpressions</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem2" checked>
+                                                    <label class="form-check-label" for="FirstCheckItem2">
+                                                        <span class="sidebar__check-title">Xtension</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem3">
+                                                    <label class="form-check-label" for="FirstCheckItem3">
+                                                        <span class="sidebar__check-title">Virage </span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem4">
+                                                    <label class="form-check-label" for="FirstCheckItem4">
+                                                        <span class="sidebar__check-title">Contour </span>
+                                                        <span class="context">(4)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem5">
+                                                    <label class="form-check-label" for="FirstCheckItem5">
+                                                        <span class="sidebar__check-title">Xperience</span>
+                                                        <span class="context">(4)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="border-top my-2"></li>
+
+                                <li class="mb-2">
+                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true">
+                                        Type
+                                    </button>
+                                    <div class="collapse show" id="collapse2">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SecondCheckItem1" checked>
+                                                    <label class="form-check-label" for="SecondCheckItem1">
+                                                        <span class="sidebar__check-title">Pop-up</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SecondCheckItem2" checked>
+                                                    <label class="form-check-label" for="SecondCheckItem2">
+                                                        <span class="sidebar__check-title">Tubar</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SecondCheckItem3">
+                                                    <label class="form-check-label" for="SecondCheckItem3">
+                                                        <span class="sidebar__check-title">Table top</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="border-top my-2"></li>
+
+                                <li class="mb-2">
+                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true">
+                                        Type
+                                    </button>
+                                    <div class="collapse show" id="collapse3">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem1">
+                                                    <label class="form-check-label" for="ThirdCheckItem1">
+                                                        <span class="sidebar__check-title">Backlit</span>
+                                                        <span class="context">(7)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem2" checked>
+                                                    <label class="form-check-label" for="ThirdCheckItem2">
+                                                        <span class="sidebar__check-title">TV Mount</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem3">
+                                                    <label class="form-check-label" for="ThirdCheckItem3">
+                                                        <span class="sidebar__check-title">Shelving</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem4">
+                                                    <label class="form-check-label" for="ThirdCheckItem4">
+                                                        <span class="sidebar__check-title">Shelving</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem5">
+                                                    <label class="form-check-label" for="ThirdCheckItem5">
+                                                        <span class="sidebar__check-title">Arch</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="border-top my-2"></li>
+
+                                <li class="mb-2">
+                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true">
+                                        Width
+                                    </button>
+                                    <div class="collapse show" id="collapse4">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem1" checked>
+                                                    <label class="form-check-label" for="FourCheckItem1">
+                                                        <span class="sidebar__check-title">2.5</span>
+                                                        <span class="context">(7)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem2" checked>
+                                                    <label class="form-check-label" for="FourCheckItem2">
+                                                        <span class="sidebar__check-title">5</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem3">
+                                                    <label class="form-check-label" for="FourCheckItem3">
+                                                        <span class="sidebar__check-title">8</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem4">
+                                                    <label class="form-check-label" for="FourCheckItem4">
+                                                        <span class="sidebar__check-title">10</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem5">
+                                                    <label class="form-check-label" for="FourCheckItem5">
+                                                        <span class="sidebar__check-title">20</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="border-top my-2"></li>
+
+                                <li class="mb-2">
+                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true">
+                                        Height
+                                    </button>
+                                    <div class="collapse show" id="collapse5">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FiveCheckItem1">
+                                                    <label class="form-check-label" for="FiveCheckItem1">
+                                                        <span class="sidebar__check-title">2.5</span>
+                                                        <span class="context">(7)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FiveCheckItem2">
+                                                    <label class="form-check-label" for="FiveCheckItem2">
+                                                        <span class="sidebar__check-title">8</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="FiveCheckItem3">
+                                                    <label class="form-check-label" for="FiveCheckItem3">
+                                                        <span class="sidebar__check-title">10</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="border-top my-2"></li>
+
+                                <li class="mb-2">
+                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true">
+                                        Form
+                                    </button>
+                                    <div class="collapse show" id="collapse6">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SixCheckItem1">
+                                                    <label class="form-check-label" for="SixCheckItem1">
+                                                        <span class="sidebar__check-title">Straight</span>
+                                                        <span class="context">(7)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SixCheckItem2">
+                                                    <label class="form-check-label" for="SixCheckItem2">
+                                                        <span class="sidebar__check-title">Curved</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="border-top my-2"></li>
+
+                                <li class="mb-2">
+                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true">
+                                        Price Range
+                                    </button>
+                                    <div class="collapse show" id="collapse7">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem1">
+                                                    <label class="form-check-label" for="SevenCheckItem1">
+                                                        <span class="sidebar__check-title">550-699</span>
+                                                        <span class="context">(27)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem2">
+                                                    <label class="form-check-label" for="SevenCheckItem2">
+                                                        <span class="sidebar__check-title">700-999</span>
+                                                        <span class="context">(38)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem3">
+                                                    <label class="form-check-label" for="SevenCheckItem3">
+                                                        <span class="sidebar__check-title">1000-1999</span>
+                                                        <span class="context">(48)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem4">
+                                                    <label class="form-check-label" for="SevenCheckItem4">
+                                                        <span class="sidebar__check-title">2000-3999</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem5">
+                                                    <label class="form-check-label" for="SevenCheckItem5">
+                                                        <span class="sidebar__check-title">4000+</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="border-top my-2"></li>
+
+                                <li class="mb-2">
+                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true">
+                                        Price Range
+                                    </button>
+                                    <div class="collapse show" id="collapse8">
+                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="EightCheckItem1">
+                                                    <label class="form-check-label" for="EightCheckItem1">
+                                                        <span class="sidebar__check-title">1+ (Fast)</span>
+                                                        <span class="context">(27)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center ">
+                                                    <input class="form-check-input" type="checkbox" value="" id="EightCheckItem2" checked>
+                                                    <label class="form-check-label" for="EightCheckItem2">
+                                                        <span class="sidebar__check-title">5+ (Easy)</span>
+                                                        <span class="context">(38)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="EightCheckItem3">
+                                                    <label class="form-check-label" for="EightCheckItem3">
+                                                        <span class="sidebar__check-title">10+ (Average)</span>
+                                                        <span class="context">(48)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="sidebar__check form-check d-flex align-items-center">
+                                                    <input class="form-check-input" type="checkbox" value="" id="EightCheckItem4">
+                                                    <label class="form-check-label" for="EightCheckItem4">
+                                                        <span class="sidebar__check-title">20+ (Expert)</span>
+                                                        <span class="context">(8)</span>
+                                                    </label>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
 
-
-                <div class="col-10 col-md-sm-12 products__list">
+                <div class="col-10 products__list">
                     <div class="row g-14">
 
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-img">
                                     <div class="products__item-carousel d-flex">
@@ -232,7 +618,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -257,7 +643,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
 
                             <div class="products__item">
 
@@ -277,7 +663,7 @@
 
                         </div>
 
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -300,7 +686,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
 
                                 <div class="products__item-img">
@@ -316,7 +702,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -341,7 +727,7 @@
 
                         </div>
 
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -361,7 +747,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -386,7 +772,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
 
                             <div class="products__item">
 
@@ -406,7 +792,7 @@
 
                         </div>
 
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -426,7 +812,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -451,7 +837,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
 
                             <div class="products__item">
 
@@ -471,7 +857,7 @@
 
                         </div>
 
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -491,7 +877,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -516,7 +902,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 col-sm-6 mb-3 ">
+                        <div class="col-4 mb-3 ">
 
                             <div class="products__item">
 
