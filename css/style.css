@@ -3,7 +3,7 @@ body {
   font-weight: normal;
 }
 
-.sidebar .btn, .products__item-title, h1 {
+.footer__bottom span, .products__bootom-number .dropdown-btn, .products__item-title, .products__filter .accordion-button, h3, h1 {
   font-family: Lato, sans-serif;
   font-weight: bold;
 }
@@ -18,6 +18,10 @@ body {
   color: #17181A;
   font-size: 15px;
   background-color: #F4F4F4;
+}
+
+li {
+  list-style-type: none;
 }
 
 a {
@@ -38,6 +42,11 @@ a {
 h1 {
   font-size: 28px;
   line-height: 30px;
+}
+
+h3 {
+  color: white;
+  font-size: 17px;
 }
 
 .header__top {
@@ -84,31 +93,86 @@ h1 {
   font-size: 20px;
 }
 
-.breadcrumb {
-  padding: 11px 0;
+.page-title {
+  padding: 11px 12px;
 }
-.breadcrumb li {
+.page-title .breadcrumb {
+  margin-bottom: 10px;
+}
+.page-title .breadcrumb li {
   color: #43464C;
   font-size: 13px;
 }
-.breadcrumb li a:hover {
+.page-title .breadcrumb li a:hover {
   color: #73962C;
 }
-.breadcrumb .active a {
+.page-title .breadcrumb .active a {
   color: #73962C;
 }
-.breadcrumb-item + .breadcrumb-item::before {
+.page-title .breadcrumb-item + .page-title .breadcrumb-item::before {
   content: url("../assets/line.svg");
   margin-top: -3%;
 }
 
+.products {
+  overflow: hidden;
+  margin-bottom: 46px;
+}
+.products__container {
+  position: relative;
+}
+.products__filter {
+  padding: 0;
+  max-width: 216px;
+  position: absolute;
+  width: 100%;
+  left: calc(var(--bs-gutter-x) * 0.5);
+}
+.products__filter .accordion {
+  max-width: 216px;
+}
+.products__filter .accordion-body {
+  padding: 12px 0 12px 17px;
+}
+.products__filter .accordion-button {
+  border: none;
+  color: #2268B4;
+  font-size: 17px;
+  max-width: 216px;
+}
+.products__filter .accordion-button:hover {
+  border: none;
+}
+.products__filter .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent;
+}
+.products__filter-check input {
+  width: 22px;
+  height: 22px;
+}
+.products__filter-check .context {
+  color: #BDBDBE;
+  margin-left: 8px;
+}
+.products__filter-title {
+  margin-left: 12px;
+}
+.products__list {
+  padding-left: 30px;
+  margin-right: -28px;
+  margin-left: 216px;
+}
+.products__item-wrapper {
+  padding: 0 14px 14px 0;
+  max-width: 282px;
+}
 .products__item {
   position: relative;
   padding-bottom: 34px;
   background: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
-  max-width: 282px;
 }
 .products__item-tags {
   position: absolute;
@@ -148,48 +212,172 @@ h1 {
   padding-top: 24px;
 }
 .products__bootom {
+  margin-top: 34px;
+}
+.products__bootom .pagination {
   border: none;
 }
-.products__bootom p {
+.products__bootom .btn {
+  padding: 10px 40px;
+}
+.products__bootom li {
+  margin-right: 14px;
+}
+.products__bootom li:last-child {
+  margin-right: 0;
+}
+.products__bootom li .description {
   color: #515151;
   font-size: 17px;
 }
-.products__bootom .disabled {
+.products__bootom .page-item i {
+  color: white;
+  font-size: 20px;
+}
+.products__bootom .page-item .page-link {
+  border-radius: 100px;
+}
+.products__bootom .page-item:first-child .page-link {
+  border-radius: 100px;
   background-color: #E5E5E5;
 }
-.products__bootom .active {
+.products__bootom .page-item:last-child .page-link {
+  border-radius: 100px;
   background-color: #99C63C;
   border: none;
 }
-
-.sidebar .btn {
-  border: none;
-  color: #2268B4;
+.products__bootom .page-item:last-child .page-link:hover {
+  background-color: #73962C;
+}
+.products__bootom .page-item .page-number {
+  padding: 6px 30px;
+  color: #17181A;
+}
+.products__bootom .page-item .page-number:hover {
+  background-color: white;
+}
+.products__bootom-number .dropdown-btn {
+  padding: 6px 22px;
   font-size: 17px;
-  padding: 0;
-  margin-bottom: 12px;
+  color: #17181A;
+  border-radius: 100px;
+  background-color: white;
 }
-.sidebar .btn:hover {
+
+.view .dropdown .btn {
+  padding: 16px 25px;
+  max-width: 216px;
+  background-color: white;
+  color: #17181A;
+  border-radius: 40px;
   border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.sidebar .btn::after {
-  content: url("../assets/icn_arrow_up.svg");
-  width: 9px;
-  height: 9px;
+.view__form-wrapper {
+  padding: 0 0 0 30px;
 }
-.sidebar__item li {
-  margin-bottom: 12px;
+.view form {
+  position: relative;
 }
-.sidebar__check .form-check-input {
-  width: 22px;
-  height: 22px;
+.view form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 12px;
+  margin-right: 13px;
 }
-.sidebar__check-title {
-  margin-left: 12px;
+.view form input {
+  padding: 16px 23px 16px 39px;
+  border: none;
+  border-radius: 53px;
 }
-.sidebar__check .context {
+.view form input[type=search] {
+  padding-right: 45px;
+}
+
+.footer {
+  background-color: #26282C;
+  padding-top: 47px;
   color: #BDBDBE;
+  font-size: 13px;
+}
+.footer a {
+  color: #BDBDBE;
+}
+.footer a:hover {
+  color: #99C63C;
+}
+.footer__contacts i {
+  font-size: 20px;
+}
+.footer__contacts-logo {
+  margin-bottom: 14px;
+}
+.footer__contacts-type {
+  margin-bottom: 22px;
+  padding-right: 20px;
+}
+.footer__contacts-type span, .footer__contacts-type p {
   margin-left: 8px;
+}
+.footer-item {
+  margin-right: 50px;
+}
+.footer-item h3 {
+  margin-bottom: 16px;
+}
+.footer-item ul {
+  padding: 0;
+}
+.footer-item ul li {
+  margin-bottom: 3px;
+}
+.footer-form h3 {
+  margin-bottom: 22px;
+}
+.footer-form input {
+  max-width: 198px;
+  padding: 13px 10px 13px 29px;
+  background-color: transparent;
+  border-radius: 100px;
+  border-color: #515151;
+  margin-bottom: 21px;
+}
+.footer-form form i {
+  color: #99C63C;
+}
+.footer-form .dropdown button {
+  padding: 15px 51px 14px 64px;
+  border: 1px solid #515151;
+  border-radius: 100px;
+  color: white;
+}
+.footer-form .dropdown-toggle::after {
+  color: #99C63C;
+}
+.footer__bottom {
+  margin-top: 22px;
+  background-color: #000000;
+  padding: 11px 0;
+}
+.footer__bottom p {
+  max-width: 325px;
+  line-height: 18px;
+}
+.footer .scrollup {
+  background-color: #99C63C;
+  padding: 5px 8px 2px 8px;
+  border-radius: 50%;
+  margin-right: 45px;
+}
+.footer .scrollup a {
+  scroll-behavior: smooth;
+}
+.footer .scrollup a i {
+  font-size: 25px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

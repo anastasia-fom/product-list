@@ -1,12 +1,77 @@
 .products {
+  overflow: hidden;
+  margin-bottom: 46px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__filter {
+    padding: 0;
+    max-width: $filter-width;
+    position: absolute;
+    width: 100%;
+    left: calc(var(--bs-gutter-x) * .5);
+
+    .accordion{
+      max-width: 216px;
+      &-body{
+        padding: 12px 0 12px 17px;
+      }
+
+      &-button{
+        border: none;
+        color: $colorful;
+        @extend %font-lato-bold;
+        font-size: $font-size_md;
+        max-width: 216px;
+
+        &:hover{
+          border: none;
+        }
+
+        &:not(.collapsed){
+          box-shadow: none;
+          background-color: transparent;
+        }
+      }
+    }
+
+    &-check{
+      input{
+        width: 22px;
+        height: 22px;
+      }
+
+      .context{
+        color:$secondary-color;
+        margin-left: 8px;
+      }
+    }
+
+    &-title{
+      margin-left: 12px;
+    }
+  }
+
+  &__list {
+    padding-left: 30px;
+    margin-right: calc(-14px * 2);
+    margin-left: $filter-width;
+  }
+
+  &__item-wrapper {
+    padding: 0 14px 14px 0;
+
+    max-width: 282px;
+  }
+
   &__item {
     position: relative;
     padding-bottom: 34px;
     background: $light-color;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
     border-radius: 16px;
-
-    max-width: 282px;
 
     &-tags {
       position: absolute;
@@ -59,23 +124,78 @@
 
 
   &__bootom{
+    margin-top: 34px;
 
-    p{
-      color: $second-color;
-      font-size: $font-size_md;
-    }
-
-    border: none;
-    .disabled{
-      background-color: #E5E5E5;
-    }
-    .active{
-      background-color: $bright-btn-color;
+    .pagination {
       border: none;
     }
 
+      .btn{
+        padding: 10px 40px;
+      }
+
+      li{
+        margin-right: 14px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+        .description{
+          color: $second-color;
+          font-size: $font-size_md;
+        }
+      }
+
+      .page-item{
+        i{
+          color: $light-color;
+          font-size: 20px;
+        }
+
+        .page-link{
+          border-radius: 100px;
+        }
+
+        &:first-child .page-link{
+          border-radius: 100px;
+          background-color: #E5E5E5;
+        }
+
+        &:last-child .page-link{
+          border-radius: 100px;
+
+          background-color: $bright-btn-color;
+          border: none;
+
+          &:hover{
+            background-color: $bright-color;
+          }
+        }
+
+
+      .page-number{
+        padding: 6px 30px;
+        color: $main-color;
+
+        &:hover{
+          background-color: $light-color;
+        }
+      }
+    }
 
   }
 
-
+  &__bootom-number{
+    .dropdown{
+      &-btn{
+        padding: 6px 22px;
+        @extend %font-lato-bold;
+        font-size: $font-size_md;
+        color: $main-color;
+        border-radius: 100px;
+        background-color: $light-color;
+      }
+    }
+  }
 }

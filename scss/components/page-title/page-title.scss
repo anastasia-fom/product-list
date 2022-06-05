@@ -1,25 +1,27 @@
-.breadcrumb {
-  padding: 11px 0;
+.page-title{
+  padding: 11px 12px;
+  .breadcrumb {
+    margin-bottom: 10px;
+    li {
+      color: $link-color;
+      font-size: $font-size_sm;
 
-  li {
-    color: $link-color;
-    font-size: $font-size_sm;
+      a {
+        &:hover{
+          color: $bright-color;
+        }
+      }
+    }
 
-    a {
-      &:hover{
+    .active {
+      a {
         color: $bright-color;
       }
     }
-  }
 
-  .active {
-    a {
-        color: $bright-color;
+    &-item+&-item::before{
+      content: url("../assets/line.svg");
+      margin-top: -3%;
     }
-  }
-
-  &-item+&-item::before{
-    content: url("../assets/line.svg");
-    margin-top: -3%;
   }
 }

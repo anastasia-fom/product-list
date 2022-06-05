@@ -1,5 +1,6 @@
 :root{
   $bs-green:  #99C63C;
+  $bs-pagination-border-radius: 100px;
 }
 
 body {
@@ -7,6 +8,10 @@ body {
   color: $main-color;
   font-size: $font-size_base;
   background-color: $background-color;
+}
+
+li{
+  list-style-type: none;
 }
 
 a{
@@ -28,4 +33,10 @@ h1{
   @extend %font-lato-bold;
   font-size: $font-size_lg;
   line-height: 30px;
+}
+
+h3{
+  color:$light-color;
+  @extend %font-lato-bold;
+  font-size: $font-size_md;
 }

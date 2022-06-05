@@ -137,11 +137,11 @@
         </div>
     </section>
 
-    <!--<section class="view">
+    <section class="view mb-3">
         <div class="container">
             <div class="row">
-                <div class="col-2 pe-0">
-                    <div class="asd">
+                <div class="col-3 pe-0">
+                    <div>
                         <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenu2"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -149,22 +149,22 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <li>
-                                    <button class="dropdown-item" type="button">Action</button>
+                                    <button class="dropdown-item" type="button">Action 1</button>
                                 </li>
                                 <li>
-                                    <button class="dropdown-item" type="button">Another action</button>
+                                    <button class="dropdown-item" type="button">Action 2</button>
                                 </li>
                                 <li>
-                                    <button class="dropdown-item" type="button">Something else here</button>
+                                    <button class="dropdown-item" type="button">Action 3</button>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-10">
+                <div class="col-9">
                     <form>
                         <div class="mb-3">
-                            <label for="search-products" hidden>Email address</label>
+                            <label for="search-products" hidden>Search</label>
                             <input placeholder="Search" type="search" class="form-control" id="search-products"
                                    aria-describedby="emailHelp">
                             <button class="btn btn-unstyled" type="submit"><i class="bi bi-search"></i></button>
@@ -173,437 +173,325 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <section class="products">
-        <div class="container">
+        <div class="container products__container">
             <div class="row">
-                <div class="col-2 pe-0 products-sidebar">
 
-                    <div class="sidebar">
-                        <div class="flex-shrink-0 p-3 bg-white">
-                            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                                <span class="fs-5 fw-semibold">Collapsible</span>
-                            </a>
-                            <ul class="list-unstyled ps-0">
-                                <li class="mb-2">
-                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true">
-                                        Subcategory
-                                    </button>
-                                    <div class="collapse show" id="collapse1">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem1" checked>
-                                                    <label class="form-check-label" for="FirstCheckItem1">
-                                                        <span class="sidebar__check-title">Xpressions</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center ">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem2" checked>
-                                                    <label class="form-check-label" for="FirstCheckItem2">
-                                                        <span class="sidebar__check-title">Xtension</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem3">
-                                                    <label class="form-check-label" for="FirstCheckItem3">
-                                                        <span class="sidebar__check-title">Virage </span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center ">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem4">
-                                                    <label class="form-check-label" for="FirstCheckItem4">
-                                                        <span class="sidebar__check-title">Contour </span>
-                                                        <span class="context">(4)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem5">
-                                                    <label class="form-check-label" for="FirstCheckItem5">
-                                                        <span class="sidebar__check-title">Xperience</span>
-                                                        <span class="context">(4)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
+                <div class="products__filter col-3">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    Subcategory
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem1" checked>
+                                        <label class="form-check-label" for="FirstCheckItem1">
+                                            <span class="products__filter-title">Xpressions</span>
+                                            <span class="context">(8)</span>
+                                        </label>
                                     </div>
-                                </li>
-
-                                <li class="border-top my-2"></li>
-
-                                <li class="mb-2">
-                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true">
-                                        Type
-                                    </button>
-                                    <div class="collapse show" id="collapse2">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SecondCheckItem1" checked>
-                                                    <label class="form-check-label" for="SecondCheckItem1">
-                                                        <span class="sidebar__check-title">Pop-up</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center ">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SecondCheckItem2" checked>
-                                                    <label class="form-check-label" for="SecondCheckItem2">
-                                                        <span class="sidebar__check-title">Tubar</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SecondCheckItem3">
-                                                    <label class="form-check-label" for="SecondCheckItem3">
-                                                        <span class="sidebar__check-title">Table top</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem2" checked>
+                                        <label class="form-check-label" for="FirstCheckItem2">
+                                            <span class="products__filter-title">Xtension</span>
+                                            <span class="context">(8)</span>
+                                        </label>
                                     </div>
-                                </li>
-
-                                <li class="border-top my-2"></li>
-
-                                <li class="mb-2">
-                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true">
-                                        Type
-                                    </button>
-                                    <div class="collapse show" id="collapse3">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem1">
-                                                    <label class="form-check-label" for="ThirdCheckItem1">
-                                                        <span class="sidebar__check-title">Backlit</span>
-                                                        <span class="context">(7)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center ">
-                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem2" checked>
-                                                    <label class="form-check-label" for="ThirdCheckItem2">
-                                                        <span class="sidebar__check-title">TV Mount</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem3">
-                                                    <label class="form-check-label" for="ThirdCheckItem3">
-                                                        <span class="sidebar__check-title">Shelving</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem4">
-                                                    <label class="form-check-label" for="ThirdCheckItem4">
-                                                        <span class="sidebar__check-title">Shelving</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem5">
-                                                    <label class="form-check-label" for="ThirdCheckItem5">
-                                                        <span class="sidebar__check-title">Arch</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem3">
+                                        <label class="form-check-label" for="FirstCheckItem3">
+                                            <span class="products__filter-title">Virage </span>
+                                            <span class="context">(8)</span>
+                                        </label>
                                     </div>
-                                </li>
-
-                                <li class="border-top my-2"></li>
-
-                                <li class="mb-2">
-                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true">
-                                        Width
-                                    </button>
-                                    <div class="collapse show" id="collapse4">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem1" checked>
-                                                    <label class="form-check-label" for="FourCheckItem1">
-                                                        <span class="sidebar__check-title">2.5</span>
-                                                        <span class="context">(7)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center ">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem2" checked>
-                                                    <label class="form-check-label" for="FourCheckItem2">
-                                                        <span class="sidebar__check-title">5</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem3">
-                                                    <label class="form-check-label" for="FourCheckItem3">
-                                                        <span class="sidebar__check-title">8</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem4">
-                                                    <label class="form-check-label" for="FourCheckItem4">
-                                                        <span class="sidebar__check-title">10</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FourCheckItem5">
-                                                    <label class="form-check-label" for="FourCheckItem5">
-                                                        <span class="sidebar__check-title">20</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem4">
+                                        <label class="form-check-label" for="FirstCheckItem4">
+                                            <span class="products__filter-title">Contour </span>
+                                            <span class="context">(4)</span>
+                                        </label>
                                     </div>
-                                </li>
-
-                                <li class="border-top my-2"></li>
-
-                                <li class="mb-2">
-                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true">
-                                        Height
-                                    </button>
-                                    <div class="collapse show" id="collapse5">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FiveCheckItem1">
-                                                    <label class="form-check-label" for="FiveCheckItem1">
-                                                        <span class="sidebar__check-title">2.5</span>
-                                                        <span class="context">(7)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center ">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FiveCheckItem2">
-                                                    <label class="form-check-label" for="FiveCheckItem2">
-                                                        <span class="sidebar__check-title">8</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="FiveCheckItem3">
-                                                    <label class="form-check-label" for="FiveCheckItem3">
-                                                        <span class="sidebar__check-title">10</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FirstCheckItem5">
+                                        <label class="form-check-label" for="FirstCheckItem5">
+                                            <span class="products__filter-title">Xperience</span>
+                                            <span class="context">(4)</span>
+                                        </label>
                                     </div>
-                                </li>
-
-                                <li class="border-top my-2"></li>
-
-                                <li class="mb-2">
-                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true">
-                                        Form
-                                    </button>
-                                    <div class="collapse show" id="collapse6">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SixCheckItem1">
-                                                    <label class="form-check-label" for="SixCheckItem1">
-                                                        <span class="sidebar__check-title">Straight</span>
-                                                        <span class="context">(7)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center ">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SixCheckItem2">
-                                                    <label class="form-check-label" for="SixCheckItem2">
-                                                        <span class="sidebar__check-title">Curved</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                    Type
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                        <div class="products__filter-check form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="SecondCheckItem1" checked>
+                                            <label class="form-check-label" for="SecondCheckItem1">
+                                                <span class="products__filter-title">Pop-up</span>
+                                                <span class="context">(8)</span>
+                                            </label>
+                                        </div>
+                                        <div class="products__filter-check form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="SecondCheckItem2" checked>
+                                            <label class="form-check-label" for="SecondCheckItem2">
+                                                <span class="products__filter-title">Tubar</span>
+                                                <span class="context">(8)</span>
+                                            </label>
+                                        </div>
+                                        <div class="products__filter-check form-check d-flex align-items-center">
+                                            <input class="form-check-input" type="checkbox" value="" id="SecondCheckItem3">
+                                            <label class="form-check-label" for="SecondCheckItem3">
+                                                <span class="products__filter-title">Table top</span>
+                                                <span class="context">(8)</span>
+                                            </label>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                                    Features
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem1">
+                                        <label class="form-check-label" for="ThirdCheckItem1">
+                                            <span class="products__filter-title">Backlit</span>
+                                            <span class="context">(7)</span>
+                                        </label>
                                     </div>
-                                </li>
-
-                                <li class="border-top my-2"></li>
-
-                                <li class="mb-2">
-                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true">
-                                        Price Range
-                                    </button>
-                                    <div class="collapse show" id="collapse7">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem1">
-                                                    <label class="form-check-label" for="SevenCheckItem1">
-                                                        <span class="sidebar__check-title">550-699</span>
-                                                        <span class="context">(27)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center ">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem2">
-                                                    <label class="form-check-label" for="SevenCheckItem2">
-                                                        <span class="sidebar__check-title">700-999</span>
-                                                        <span class="context">(38)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem3">
-                                                    <label class="form-check-label" for="SevenCheckItem3">
-                                                        <span class="sidebar__check-title">1000-1999</span>
-                                                        <span class="context">(48)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem4">
-                                                    <label class="form-check-label" for="SevenCheckItem4">
-                                                        <span class="sidebar__check-title">2000-3999</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem5">
-                                                    <label class="form-check-label" for="SevenCheckItem5">
-                                                        <span class="sidebar__check-title">4000+</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem2" checked>
+                                        <label class="form-check-label" for="ThirdCheckItem2">
+                                            <span class="products__filter-title">TV Mount</span>
+                                            <span class="context">(8)</span>
+                                        </label>
                                     </div>
-                                </li>
-
-                                <li class="border-top my-2"></li>
-
-                                <li class="mb-2">
-                                    <button class="sidebar__item btn btn-toggle align-items-center rounded collapsed mb-12" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true">
-                                        Price Range
-                                    </button>
-                                    <div class="collapse show" id="collapse8">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal small">
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="EightCheckItem1">
-                                                    <label class="form-check-label" for="EightCheckItem1">
-                                                        <span class="sidebar__check-title">1+ (Fast)</span>
-                                                        <span class="context">(27)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center ">
-                                                    <input class="form-check-input" type="checkbox" value="" id="EightCheckItem2" checked>
-                                                    <label class="form-check-label" for="EightCheckItem2">
-                                                        <span class="sidebar__check-title">5+ (Easy)</span>
-                                                        <span class="context">(38)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="EightCheckItem3">
-                                                    <label class="form-check-label" for="EightCheckItem3">
-                                                        <span class="sidebar__check-title">10+ (Average)</span>
-                                                        <span class="context">(48)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                            <li>
-                                                <div class="sidebar__check form-check d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" value="" id="EightCheckItem4">
-                                                    <label class="form-check-label" for="EightCheckItem4">
-                                                        <span class="sidebar__check-title">20+ (Expert)</span>
-                                                        <span class="context">(8)</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-
-                                        </ul>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem3">
+                                        <label class="form-check-label" for="ThirdCheckItem3">
+                                            <span class="products__filter-title">Shelving</span>
+                                            <span class="context">(8)</span>
+                                        </label>
                                     </div>
-                                </li>
-
-                            </ul>
-
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="ThirdCheckItem5">
+                                        <label class="form-check-label" for="ThirdCheckItem5">
+                                            <span class="products__filter-title">Arch</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                                    Width
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                                <div class="accordion-body">
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FourCheckItem1" checked>
+                                        <label class="form-check-label" for="FourCheckItem1">
+                                            <span class="products__filter-title">2.5</span>
+                                            <span class="context">(7)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center ">
+                                        <input class="form-check-input" type="checkbox" value="" id="FourCheckItem2" checked>
+                                        <label class="form-check-label" for="FourCheckItem2">
+                                            <span class="products__filter-title">5</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FourCheckItem3">
+                                        <label class="form-check-label" for="FourCheckItem3">
+                                            <span class="products__filter-title">8</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FourCheckItem4">
+                                        <label class="form-check-label" for="FourCheckItem4">
+                                            <span class="products__filter-title">10</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FourCheckItem5">
+                                        <label class="form-check-label" for="FourCheckItem5">
+                                            <span class="products__filter-title">20</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                                    Height
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                                <div class="accordion-body">
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FiveCheckItem1">
+                                        <label class="form-check-label" for="FiveCheckItem1">
+                                            <span class="products__filter-title">2.5</span>
+                                            <span class="context">(7)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FiveCheckItem2">
+                                        <label class="form-check-label" for="FiveCheckItem2">
+                                            <span class="products__filter-title">8</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="FiveCheckItem3">
+                                        <label class="form-check-label" for="FiveCheckItem3">
+                                            <span class="products__filter-title">10</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix">
+                                    Form
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                                <div class="accordion-body">
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="SixCheckItem1">
+                                        <label class="form-check-label" for="SixCheckItem1">
+                                            <span class="products__filter-title">Straight</span>
+                                            <span class="context">(7)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="SixCheckItem2">
+                                        <label class="form-check-label" for="SixCheckItem2">
+                                            <span class="products__filter-title">Curved</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="true" aria-controls="panelsStayOpen-collapseSeven">
+                                    Price Range
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                                <div class="accordion-body">
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem1">
+                                        <label class="form-check-label" for="SevenCheckItem1">
+                                            <span class="products__filter-title">550-699</span>
+                                            <span class="context">(27)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem2">
+                                        <label class="form-check-label" for="SevenCheckItem2">
+                                            <span class="products__filter-title">700-999</span>
+                                            <span class="context">(38)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem3">
+                                        <label class="form-check-label" for="SevenCheckItem3">
+                                            <span class="products__filter-title">1000-1999</span>
+                                            <span class="context">(48)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem4">
+                                        <label class="form-check-label" for="SevenCheckItem4">
+                                            <span class="products__filter-title">2000-3999</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="SevenCheckItem5">
+                                        <label class="form-check-label" for="SevenCheckItem5">
+                                            <span class="products__filter-title">4000+</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="true" aria-controls="panelsStayOpen-collapseEight">
+                                    Set-up Time
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                                <div class="accordion-body">
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="EightCheckItem1">
+                                        <label class="form-check-label" for="EightCheckItem1">
+                                            <span class="products__filter-title">1+ (Fast)</span>
+                                            <span class="context">(27)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="EightCheckItem2" checked>
+                                        <label class="form-check-label" for="EightCheckItem2">
+                                            <span class="products__filter-title">5+ (Easy)</span>
+                                            <span class="context">(38)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="EightCheckItem3">
+                                        <label class="form-check-label" for="EightCheckItem3">
+                                            <span class="products__filter-title">10+ (Average)</span>
+                                            <span class="context">(48)</span>
+                                        </label>
+                                    </div>
+                                    <div class="products__filter-check form-check d-flex align-items-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="EightCheckItem4">
+                                        <label class="form-check-label" for="EightCheckItem4">
+                                            <span class="products__filter-title">20+ (Expert)</span>
+                                            <span class="context">(8)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-10 products__list">
-                    <div class="row g-14">
-
-                        <div class="col-4 mb-3 ">
+                <div class="col-9 row products__list">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-img">
                                     <div class="products__item-carousel d-flex">
@@ -618,7 +506,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -643,7 +531,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
 
                             <div class="products__item">
 
@@ -663,7 +551,7 @@
 
                         </div>
 
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -686,7 +574,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
 
                                 <div class="products__item-img">
@@ -702,7 +590,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -727,7 +615,7 @@
 
                         </div>
 
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -747,7 +635,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -772,7 +660,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
 
                             <div class="products__item">
 
@@ -792,7 +680,7 @@
 
                         </div>
 
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -812,7 +700,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -837,7 +725,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
 
                             <div class="products__item">
 
@@ -857,7 +745,7 @@
 
                         </div>
 
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -877,7 +765,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
                             <div class="products__item">
                                 <div class="products__item-tags">
                                     <a href="#">
@@ -902,7 +790,7 @@
                             </div>
 
                         </div>
-                        <div class="col-4 mb-3 ">
+                        <div class="col-4 products__item-wrapper">
 
                             <div class="products__item">
 
@@ -922,18 +810,30 @@
 
                         </div>
 
-                        <div class="products__bootom">
-                            <nav aria-label="Навигация по страницам">
-                                <ul class="pagination">
-                                    <li class="page-item"><a class="page-link disabled" href="#">Предыдущая</a></li>
-                                    <p class="product__content-page">Page</p>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <p class="product__content-page">of 128</p>
-                                    <li class="page-item"><a class="page-link active" href="#">Следующая</a></li>
+                        <div class="products__bootom d-flex justify-content-between">
+                            <nav aria-label="Navigation">
+                                <ul class="pagination d-flex align-items-center">
+                                    <li class="page-item"><a class="page-link btn disabled" href="#"><i class="bi bi-arrow-left pull-left"></i></a></li>
+                                    <li class="description"><p class="product__content-page mb-0">Page</p></li>
+                                    <li class="page-item"><a class="page-link page-number" href="#">1</a></li>
+                                    <li class="description"><p class="product__content-page mb-0">of 128</p></li>
+                                    <li class="page-item"><a class="page-link btn active" href="#"><i class="bi bi-arrow-right pull-right"></i></a></li>
                                 </ul>
                             </nav>
+
+                            <div class="products__bootom-number">
+                                <div class="dropdown">
+                                    <button class="dropdown-btn btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        50
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="#">60</a></li>
+                                        <li><a class="dropdown-item" href="#">80</a></li>
+                                        <li><a class="dropdown-item" href="#">120</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -944,6 +844,138 @@
 
 
 </main>
+
+<footer class="footer">
+
+        <div class="container">
+        <div class="row">
+            <div class="col-3 footer__contacts">
+                <div class="footer__contacts-logo"><a href="#"><img src="../assets/logo-light.png" alt="Logo"></a></div>
+
+                <div class="d-flex align-items-center footer__contacts-type">
+                    <i class="bi bi-geo-alt"></i>
+                    <p class="mb-0">344, rue Jardin Colar - 34130
+                        LANSARGUES - FRANCE</p>
+                </div>
+
+                <div class="d-flex align-items-center  footer__contacts-type">
+                    <a href="tel:+330499632050">
+                        <i class="bi bi-telephone"></i>
+                        <span>+33 (0)4 99 63 20 50</span>
+                    </a>
+                </div>
+
+                <div class="d-flex align-items-center  footer__contacts-type">
+                    <a href="mailto:sales@duodisplay.com">
+                        <i class="bi bi-envelope"></i>
+                        <span>sales@duodisplay.com</span>
+                    </a>
+                </div>
+                <div><img src="../assets/made_in_france.svg" alt="Made in France"></div>
+            </div>
+            <div class="col-1 footer-item">
+                <h3>Products</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Banner stands</a></li>
+                        <li><a href="#">Display Wall</a></li>
+                        <li><a href="#">Counters</a></li>
+                        <li><a href="#">Outdoor</a></li>
+                        <li><a href="#">Frames</a></li>
+                        <li><a href="#">Stands</a></li>
+                        <li><a href="#">Outdoor</a></li>
+                        <li><a href="#">Frames</a></li>
+                        <li><a href="#">Stands</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-1 footer-item">
+                <h3>Applications</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Tradeshows</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Road-shows</a></li>
+                        <li><a href="#">Decoration</a></li>
+                        <li><a href="#">Retail</a></li>
+                        <li><a href="#">Printing</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-1 footer-item">
+                <h3>My Profile</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Quotes</a></li>
+                        <li><a href="#">My Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-2 footer-item">
+                <h3>Duo Display</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">About Duo</a></li>
+                        <li><a href="#">General terms</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Legal notice</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-2 footer-form">
+                <h3>Newsletter</h3>
+
+                <form>
+                    <div class="form-group">
+                        <label><input type="email" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" placeholder="Your email address"></label>
+                        <i class="bi bi-send-fill"></i>
+                    </div>
+                </form>
+
+                <div class="dropdown">
+                    <button class="text-capitalize btn-unstyled dropdown-toggle" type="button"
+                            id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe2"></i>
+                        <span>English</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                        <li><a class="dropdown-item" href="#">Russian</a></li>
+                        <li><a class="dropdown-item" href="#">German</a></li>
+                        <li><a class="dropdown-item" href="#">Spain</a></li>
+                        <li><a class="dropdown-item" href="#">Italian</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+            <div class="footer__bottom ">
+                <div class="container">
+                    <div class="footer__wrapper d-flex justify-content-between">
+                        <div class="row">
+                            <p class="col-11">© 2021 Duo Industrie. All rights reserved. From <span>Duo</span> with</p>
+                            <i class="col-1 bi bi-heart"></i>
+                        </div>
+
+                        <div class="footer__go-top">
+
+                            <div class="scrollup">
+                                <a href="#top" title="Go up"><i class="bi bi-arrow-up"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+
+</footer>
 
 
 

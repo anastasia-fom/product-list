@@ -1,0 +1,45 @@
+.view {
+
+  .dropdown{
+    .btn{
+      padding: 16px 25px;
+      max-width: 216px;
+      background-color: $light-color;
+      color: $main-color;
+      border-radius: 40px;
+      border: none;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__form-wrapper {
+    padding: 0 0 0 30px;
+  }
+
+  form {
+    position: relative;
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 12px;
+      margin-right: 13px;
+    }
+
+    input{
+      padding: 16px 23px 16px 39px;
+      border: none;
+      border-radius: 53px;
+    }
+
+    input[type=search] {
+      padding-right: 45px;
+    }
+
+  }
+
+}
