@@ -1,0 +1,72 @@
+.footer{
+
+  @include xx-large-max(){
+    &__contacts{
+      margin-right: 40px;
+    }
+    &__form{
+      margin-left: 40px;
+    }
+
+    &__item{
+      padding: 0;
+    }
+  }
+
+  @include x-large-max(){
+    &__contacts {
+      margin-right: 20px;
+    }
+    &__form {
+      margin-left: 20px;
+    }
+
+    &__item {
+      padding: 0;
+      margin-right: 12px;
+    }
+  }
+
+  @include large-max(){
+    &__item{
+      margin-right: 0;
+    }
+
+    &__form{
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    input{
+      padding: 13px 423px 13px 29px;
+      max-width: 900px;
+    }
+  }
+
+  @include medium-max(){
+
+    &__form {
+      margin-left: 0!important;
+    }
+
+    &__item{
+      padding: 0;
+      margin-top: 20px;
+      margin-right: 20px;
+    }
+
+    input {
+      padding: 13px 237px 13px 29px;
+      max-width: 700px;
+    }
+  }
+
+  @include small-max(){
+    padding-left: 10px;
+
+    input {
+      padding: 13px 55px 13px 29px;
+      max-width: 300px;
+    }
+  }
+}

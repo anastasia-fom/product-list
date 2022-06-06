@@ -1,0 +1,55 @@
+.products{
+
+  @include large-max(){
+    &__filter{
+      max-width: 100%;
+      padding: 0;
+      background-color: transparent;
+      z-index: 2;
+
+      &-description{
+        visibility: hidden;
+      }
+
+      .accordion{
+        display: none;
+        width: 100%;
+
+        &-button{
+          padding: 16px;
+        }
+      }
+      [type="checkbox"]:checked + .accordion{
+        display: block;
+      }
+
+      &-btn{
+        display: block;
+        margin-top: -32px;
+      }
+    }
+
+    &__list{
+      margin-top: 60px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &__item{
+      &-wrapper {
+        max-width: calc(100%/2);
+      }
+
+      &-info{
+        margin-top: 0;
+      }
+
+      &-img{
+        min-height: 230px;
+      }
+    }
+    &__bootom{
+      flex-direction: column;
+    }
+  }
+}
