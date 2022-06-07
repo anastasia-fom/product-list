@@ -46,3 +46,9 @@ h3{
   @extend %font-lato-bold;
   font-size: $font-size_md;
 }
+
+h5{
+  font-size: $font-size_lg;
+  @extend %font-lato-bold;
+  color: $bright-btn-color;
+}

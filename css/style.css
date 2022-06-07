@@ -3,7 +3,7 @@ body {
   font-weight: normal;
 }
 
-.footer__bottom span, .products__bootom-number .dropdown-btn, .products__item-title, .products__filter .accordion-button, h3, h1 {
+.footer__bottom span, .products__bootom-number .dropdown-btn, .products__item-title, .products__filter .accordion-button, h5, h3, h1 {
   font-family: Lato, sans-serif;
   font-weight: bold;
 }
@@ -52,6 +52,11 @@ h1 {
 h3 {
   color: white;
   font-size: 17px;
+}
+
+h5 {
+  font-size: 28px;
+  color: #99C63C;
 }
 
 .header__top {
@@ -210,9 +215,9 @@ h3 {
   margin-left: 12px;
 }
 .products__list {
-  padding-left: 30px;
+  padding: 0;
   margin-right: -28px;
-  margin-left: 246px;
+  margin-left: calc(216px + 30px + 40px);
 }
 .products__item-wrapper {
   padding: 0 14px 14px 0;
@@ -315,6 +320,20 @@ h3 {
   background-color: white;
 }
 
+@media screen and (max-width: 1200px) {
+  .products__container {
+    overflow: hidden;
+  }
+  .products__list {
+    margin-left: calc(216px + 30px);
+  }
+  .products__item-wrapper {
+    max-width: 50%;
+  }
+  .products__item-img {
+    min-height: 230px;
+  }
+}
 @media screen and (max-width: 992px) {
   .products__filter {
     max-width: 100%;
@@ -351,7 +370,7 @@ h3 {
     margin-top: 0;
   }
   .products__item-img {
-    min-height: 230px;
+    min-height: 255px;
   }
   .products__bootom {
     flex-direction: column;
@@ -376,7 +395,6 @@ h3 {
   padding: 0 0 0 30px;
 }
 .view form {
-  margin-left: 40px;
   position: relative;
 }
 .view form button {
@@ -421,7 +439,7 @@ h3 {
   color: #99C63C;
 }
 .footer__contacts {
-  margin-right: 90px;
+  margin-right: 30px;
 }
 .footer__contacts i {
   font-size: 20px;
@@ -450,9 +468,6 @@ h3 {
 }
 .footer__display {
   margin-right: 0;
-}
-.footer__form {
-  margin-left: 90px;
 }
 .footer__form h3 {
   margin-bottom: 22px;
@@ -575,6 +590,16 @@ h3 {
     padding: 13px 55px 13px 29px;
     max-width: 300px;
   }
+}
+
+.modal .btn {
+  background-color: #99C63C;
+  color: white;
+  border: none;
+}
+.modal .btn-secondary {
+  background-color: #515151;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

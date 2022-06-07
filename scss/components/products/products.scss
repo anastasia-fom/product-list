@@ -105,13 +105,11 @@
   }
 
   &__list {
-    //padding-left: 30px;
-    //margin-right: calc(-14px * 2);
-    //margin-left: calc(#{$filter-width} + 30px);
+    $margin-left: 30px;
+    padding: 0;
 
-    padding-left: 30px;
     margin-right: calc(-14px * 2);
-    margin-left: calc(216px + 30px);
+    margin-left: calc(#{$filter-width} + #{$margin-left} + 40px);
   }
 
   &__item-wrapper {

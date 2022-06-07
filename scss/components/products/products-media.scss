@@ -1,5 +1,25 @@
 .products{
 
+  @include x-large-max(){
+    &__container{
+      overflow: hidden;
+    }
+
+    &__list{
+      margin-left: calc(#{$filter-width} + 30px);
+    }
+
+    &__item-wrapper{
+        max-width: calc(100%/2);
+    }
+
+    &__item{
+      &-img{
+        min-height: 230px;
+      }
+    }
+  }
+
   @include large-max(){
     &__filter{
       max-width: 100%;
@@ -45,7 +65,7 @@
       }
 
       &-img{
-        min-height: 230px;
+        min-height: 255px;
       }
     }
     &__bootom{
