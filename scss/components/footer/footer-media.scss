@@ -2,10 +2,10 @@
 
   @include xx-large-max(){
     &__contacts{
-      margin-right: 40px;
+      margin-right: 36px;
     }
     &__form{
-      margin-left: 40px;
+      margin-left: 0;
     }
 
     &__item{
@@ -23,19 +23,39 @@
 
     &__item {
       padding: 0;
-      margin-right: 12px;
+      margin-right: 40px;
     }
+    form{
+      button{
+        margin-top: -110px;
+      }
+      i{
+        margin-left: 187px;
+      }
+    }
+
   }
 
   @include large-max(){
     &__item{
       margin-right: 0;
+      margin-top: 20px;
     }
 
     &__form{
       margin-left: 0;
       margin-top: 20px;
     }
+
+    form{
+      button{
+        margin-top: 0;
+      }
+      i{
+        margin-left: -100px;
+      }
+    }
+
 
     input{
       padding: 13px 423px 13px 29px;
@@ -62,11 +82,64 @@
   }
 
   @include small-max(){
-    padding-left: 10px;
 
-    input {
-      padding: 13px 55px 13px 29px;
-      max-width: 300px;
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+
+    h3{
+      font-size: $font-size_lg;
+    }
+    &__item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: $font-size_md;
+      margin-right: 0;
+
+      ul{
+        li{
+          text-align: center;
+        }
+      }
+    }
+
+    &__form{
+      margin-right: 0;
+
+      form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .form-group{
+          margin-left: 20px;
+        }
+      }
+
+        input{
+          max-width: 100%;
+          padding: 13px 10px 13px 29px;
+        }
+
+        .dropdown{
+          display: flex;
+          justify-content: center;
+        }
+
+
+      h3{
+        text-align: center;
+      }
+
+      &-media{
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
     }
   }
 }

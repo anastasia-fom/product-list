@@ -1,5 +1,4 @@
 .products {
-  overflow: hidden;
   margin-bottom: 46px;
 
   &__container {
@@ -109,7 +108,7 @@
     padding: 0;
 
     margin-right: calc(-14px * 2);
-    margin-left: calc(#{$filter-width} + #{$margin-left} + 40px);
+    margin-left: calc(#{$filter-width} + #{$margin-left} + 55px);
   }
 
   &__item-wrapper {
@@ -175,7 +174,7 @@
   }
 
 
-  &__bootom{
+  &__bottom{
     margin-top: 34px;
 
     .pagination {
@@ -238,7 +237,7 @@
 
   }
 
-  &__bootom-number{
+  &__bottom-number{
     .dropdown{
       &-btn{
         padding: 6px 22px;
@@ -247,6 +246,7 @@
         color: $main-color;
         border-radius: 100px;
         background-color: $light-color;
+        border-color: #E2E2E2;
       }
     }
   }

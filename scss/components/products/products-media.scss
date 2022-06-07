@@ -1,12 +1,8 @@
 .products{
 
   @include x-large-max(){
-    &__container{
-      overflow: hidden;
-    }
-
     &__list{
-      margin-left: calc(#{$filter-width} + 30px);
+      margin-left: calc(#{$filter-width} + 30px + 14px);
     }
 
     &__item-wrapper{
@@ -51,7 +47,7 @@
 
     &__list{
       margin-top: 60px;
-      margin-left: 0;
+      margin-left: 14px;
       margin-right: 0;
     }
 
@@ -65,11 +61,48 @@
       }
 
       &-img{
-        min-height: 255px;
+        min-height: 230px;
       }
     }
-    &__bootom{
+    &__bottom{
       flex-direction: column;
+    }
+  }
+
+  @include small-max(){
+
+    &__item {
+      max-width: 216px;
+      width: 100%;
+      &-wrapper {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &__bottom {
+      padding: 0 10px;
+      .pagination {
+        justify-content: center;
+        .page-item{
+          i{
+            font-size: 14px;
+          }
+        }
+
+        .page-number {
+          padding: 4px 14px;
+        }
+
+        .btn{
+          padding: 4px 14px;
+        }
+
+        .description{
+          font-size: $font-size_xs;
+        }
+      }
     }
   }
 }

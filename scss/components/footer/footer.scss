@@ -1,4 +1,5 @@
 .footer {
+  padding: 0;
   background-color: $background-color-footer;
   padding-top: 47px;
   color: $secondary-color;
@@ -53,8 +54,6 @@
   }
 
   &__form {
-    //margin-left: 90px;
-
     h3 {
       margin-bottom: 22px;
     }
