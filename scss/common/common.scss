@@ -13,8 +13,7 @@ body {
   @extend %font-lato-regular;
   color: $main-color;
   font-size: $font-size_base;
-  //background-color: $background-color;
-  background-color: pink;
+  background-color: $background-color;
 }
 
 li{

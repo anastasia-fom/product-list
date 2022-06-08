@@ -29,12 +29,12 @@
 
       .accordion{
         display: none;
-        width: 100%;
-
+        width: 95%;
         &-button{
           padding: 16px;
         }
       }
+
       [type="checkbox"]:checked + .accordion{
         display: block;
       }
@@ -70,10 +70,21 @@
   }
 
   @include small-max(){
+    .row{
+      padding: 0;
+    }
+
+    &__filter{
+      max-width: 90%;
+      .accordion{
+        max-width: 300px;
+      }
+    }
 
     &__item {
       max-width: 216px;
       width: 100%;
+      padding: 0;
       &-wrapper {
         max-width: 100%;
         display: flex;
