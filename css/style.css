@@ -357,7 +357,7 @@ h5 {
   }
   .products__list {
     margin-top: 60px;
-    margin-left: 14px;
+    margin-left: 0;
     margin-right: 0;
   }
   .products__item-wrapper {
@@ -369,7 +369,7 @@ h5 {
   .products__item-img {
     min-height: 230px;
   }
-  .products__bottom {
+  .products__bottom-wrapper {
     flex-direction: column;
   }
 }
@@ -378,10 +378,7 @@ h5 {
     padding: 0;
   }
   .products__filter {
-    max-width: 90%;
-  }
-  .products__filter .accordion {
-    max-width: 300px;
+    max-width: 100%;
   }
   .products__item {
     max-width: 216px;
@@ -394,7 +391,7 @@ h5 {
     justify-content: center;
   }
   .products__bottom {
-    padding: 0 10px;
+    padding: 0;
   }
   .products__bottom .pagination {
     justify-content: center;
